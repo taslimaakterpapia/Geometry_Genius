@@ -5,7 +5,7 @@ document.getElementById('tri-btn').addEventListener('click', function(){
     const data = getAllElementsById("tri-name", "tri-input1", "tri-input2");
 
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-       return alert('Please enter two number greater than 0')
+       return alert('Please enter valid number greater than 0')
     }
 
     const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
@@ -14,13 +14,13 @@ document.getElementById('tri-btn').addEventListener('click', function(){
 })
 
 
-document.getElementById('rec-btn').addEventListener('click',function(){
+document.getElementById('rect-btn').addEventListener('click',function(){
     serial=serial+1;
     
-    const data = getAllElementsById("rect-name", "rect-input1", "rec-input2");
+    const data = getAllElementsById("rect-name", "rect-input1", "rect-input2");
 
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-       return alert('Please enter two number greater than 0')
+       return alert('Please enter valid number greater than 0')
     }
 
     const total=(parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
@@ -34,7 +34,7 @@ document.getElementById('para-btn').addEventListener('click',function(){
     const data = getAllElementsById("para-name", "para-input1", "para-input2");
 
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-       return alert('Please enter two number greater than 0')
+       return alert('Please enter valid number greater than 0')
     }
 
     const total=(parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
@@ -50,7 +50,7 @@ document.getElementById('rhom-btn').addEventListener('click',function(){
     const data = getAllElementsById("rhom-name", "rhom-input1", "rhom-input2");
 
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-       return alert('Please enter two number greater than 0')
+       return alert('Please enter valid number greater than 0')
     }
 
     const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
@@ -60,17 +60,11 @@ document.getElementById('rhom-btn').addEventListener('click',function(){
 
 document.getElementById('penta-btn').addEventListener('click',function(){
     serial=serial+1;
-    // const name=document.getElementById('pentagon-name').innerText;
-    // const input1=document.getElementById('pentagon-input1').value;
-    // const input1Value=parseFloat(input1)
-
-    // const input2=document.getElementById('pentagon-input2').value;
-    // const input2Value=parseFloat(input2);
-
+  
     const data = getAllElementsById("penta-name", "penta-input1", "penta-input2");
 
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-       return alert('Please enter two number greater than 0')
+       return alert('Please enter valid number greater than 0')
     }
 
     const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
@@ -79,17 +73,10 @@ document.getElementById('penta-btn').addEventListener('click',function(){
 
 document.getElementById('elli-btn').addEventListener('click',function(){
     serial=serial+1;
-    // const name=document.getElementById('ellipse-name').innerText;
-    // const input1=document.getElementById('ellipse-input1').value;
-    // const input1Value=parseFloat(input1)
-
-    // const input2=document.getElementById('ellipse-input2').value;
-    // const input2Value=parseFloat(input2);
-
-   
+     
     const data = getAllElementsById("elli-name", "elli-input1", "elli-input2");
     if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
-        return alert('Please enter two number greater than 0')
+        return alert('Please enter valid number greater than 0')
      }
     const total=(3.1416*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
     
@@ -117,7 +104,7 @@ function getAllElementsById(id1, id2, id3) {
 
 
 function getAllData(name,total){
-    const container=document.getElementById('table-container');
+    const container=document.getElementById('area-calculation');
     const tr=document.createElement('tr');
     tr.innerHTML=`
     <td>${serial}.</td>
