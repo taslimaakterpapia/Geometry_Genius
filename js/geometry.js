@@ -1,168 +1,144 @@
-// ----------------------------------triangle----------------------------
-
-document.getElementById('triangle-btn').addEventListener('click', function(){
-
-
-    const trianglFirstField = document.getElementById('triangle-first-field');
-    const triangleFirstFieldString = trianglFirstField.value;
-     const trianglFirstFieldValue = parseFloat(triangleFirstFieldString);
-
-    
-
-     
-    const trianglSecondField = document.getElementById('triangle-second-field');
-    const triangleSecondFieldString = trianglSecondField.value;
-    const triangleSecondFieldValue = parseFloat(triangleSecondFieldString);
-
-  
-
-    const totalTriangleFieldValue = 0.5 * trianglFirstFieldValue * triangleSecondFieldValue ;
-
-    // console.log(totalTriangleFieldValue);
-
+let serial=0;
+document.getElementById('tri-btn').addEventListener('click', function(){
+    serial=serial+1;
    
+    const data = getAllElementsById("tri-name", "tri-input1", "tri-input2");
 
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+       return alert('Please enter two number greater than 0')
+    }
+
+    const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
+    getAllData(data.name,total);
+    
 })
 
-// ----------------------------------Rectangle----------------------------
 
-
-document.getElementById('rectangle-btn').addEventListener('click', function(){
-
-
-    const rectangleFirstField = document.getElementById('rectangle-first-field');
-    const rectangleFirstFieldString = rectangleFirstField.value;
-     const rectangleFirstFieldValue = parseFloat(rectangleFirstFieldString);
-
+document.getElementById('rec-btn').addEventListener('click',function(){
+    serial=serial+1;
     
+    const data = getAllElementsById("rect-name", "rect-input1", "rec-input2");
 
-     
-    const rectangleSecondField = document.getElementById('rectangle-second-field');
-    const rectangleSecondFieldString = rectangleSecondField.value;
-    const rectangleSecondFieldValue = parseFloat(rectangleSecondFieldString);
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+       return alert('Please enter two number greater than 0')
+    }
 
-  
+    const total=(parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
 
-    const totalRectangleFieldValue = rectangleFirstFieldValue * rectangleSecondFieldValue ;
+    getAllData(data.name,total);
+})
 
-    // console.log(totalRectangleFieldValue);
-
+document.getElementById('para-btn').addEventListener('click',function(){
+    serial=serial+1;
    
+    const data = getAllElementsById("para-name", "para-input1", "para-input2");
 
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+       return alert('Please enter two number greater than 0')
+    }
+
+    const total=(parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
+
+    getAllData(data.name,total);
 })
 
 
 
-// ----------------------------------Parallelogram----------------------------
-
-
-document.getElementById('parallelogram-btn').addEventListener('click', function(){
-
-
-    const parallelogramFirstField = document.getElementById('parallelogram-first-field');
-    const  parallelogramFirstFieldString =  parallelogramFirstField.value;
-     const  parallelogramFirstFieldValue = parseFloat( parallelogramFirstFieldString);
-
-    
-
-     
-    const  parallelogramSecondField = document.getElementById('parallelogram-second-field');
-    const  parallelogramSecondFieldString =  parallelogramSecondField.value;
-    const  parallelogramSecondFieldValue = parseFloat( parallelogramSecondFieldString);
-
-  
-
-    const totalParallelogrameFieldValue =  parallelogramFirstFieldValue *  parallelogramSecondFieldValue ;
-
-    // console.log(totalParallelogrameFieldValue);
-
+document.getElementById('rhom-btn').addEventListener('click',function(){
+    serial=serial+1;
    
+    const data = getAllElementsById("rhom-name", "rhom-input1", "rhom-input2");
 
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+       return alert('Please enter two number greater than 0')
+    }
+
+    const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
+    getAllData(data.name,total);
+    
 })
 
+document.getElementById('penta-btn').addEventListener('click',function(){
+    serial=serial+1;
+    // const name=document.getElementById('pentagon-name').innerText;
+    // const input1=document.getElementById('pentagon-input1').value;
+    // const input1Value=parseFloat(input1)
 
-// ----------------------------------Rhombus----------------------------
+    // const input2=document.getElementById('pentagon-input2').value;
+    // const input2Value=parseFloat(input2);
 
+    const data = getAllElementsById("penta-name", "penta-input1", "penta-input2");
 
-document.getElementById('rhombus-btn').addEventListener('click', function(){
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+       return alert('Please enter two number greater than 0')
+    }
 
+    const total=(0.5*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
+    getAllData(data.name,total);
+})
 
-    const rhombusFirstField = document.getElementById('rhombus-first-field');
-    const  rhombusFirstFieldString =  rhombusFirstField.value;
-     const  rhombusFirstFieldValue = parseFloat(rhombusFirstFieldString);
+document.getElementById('elli-btn').addEventListener('click',function(){
+    serial=serial+1;
+    // const name=document.getElementById('ellipse-name').innerText;
+    // const input1=document.getElementById('ellipse-input1').value;
+    // const input1Value=parseFloat(input1)
 
-    
-
-     
-    const  rhombusSecondField = document.getElementById('rhombus-second-field');
-    const  rhombusSecondFieldString =  rhombusSecondField.value;
-    const  rhombusSecondFieldValue = parseFloat( rhombusSecondFieldString);
-
-  
-
-    const totalRhombusFieldValue = 0.5 * rhombusFirstFieldValue *  rhombusSecondFieldValue ;
-
-    // console.log(totalRhombusFieldValue);
+    // const input2=document.getElementById('ellipse-input2').value;
+    // const input2Value=parseFloat(input2);
 
    
-
+    const data = getAllElementsById("elli-name", "elli-input1", "elli-input2");
+    if(data.input1==='' || data.input2===''  || data.input1<=0 || data.input2<=0) {
+        return alert('Please enter two number greater than 0')
+     }
+    const total=(3.1416*parseFloat(data.input1) * parseFloat(data.input2)).toFixed(2);
+    
+    getAllData(data.name,total);
 })
 
 
 
 
-// ----------------------------------Pentagon----------------------------
 
-
-document.getElementById('pentagon-btn').addEventListener('click', function(){
-
-
-    const pentagonFirstField = document.getElementById('pentagon-first-field');
-    const  pentagonFirstFieldString =  pentagonFirstField.value;
-     const  pentagonFirstFieldValue = parseFloat(pentagonFirstFieldString);
-
-    
-
-     
-    const  pentagonSecondField = document.getElementById('pentagon-second-field');
-    const  pentagonSecondFieldString =  pentagonSecondField.value;
-    const  pentagonSecondFieldValue = parseFloat( pentagonSecondFieldString);
-
-  
-
-    const totalPentagonFieldValue = 0.5 * pentagonFirstFieldValue *  pentagonSecondFieldValue ;
-
-    // console.log(totalPentagonFieldValue);
-
+function getAllElementsById(id1, id2, id3) {
    
-
-})
-
-
-// ----------------------------------Ellipse----------------------------
-
-
-document.getElementById('ellipse-btn').addEventListener('click', function(){
-
-
-    const ellipseFirstField = document.getElementById('ellipse-first-field');
-    const  ellipseFirstFieldString =  ellipseFirstField.value;
-     const  ellipseFirstFieldValue = parseFloat(ellipseFirstFieldString);
-
-    
-
-     
-    const  ellipseSecondField = document.getElementById('ellipse-second-field');
-    const  ellipseSecondFieldString =  ellipseSecondField.value;
-    const  ellipseSecondFieldValue = parseFloat( ellipseSecondFieldString);
-
+    const name = document.getElementById(id1).innerText;
+    const input1 = document.getElementById(id2).value;
+    const input2 = document.getElementById(id3).value;
   
+    const data = {
+      name: name,
+      input1: input1,
+      input2: input2,
+    };
+    return data;
+  }
 
-    const totalEllipseFieldValue = 3.0416 * ellipseFirstFieldValue *  ellipseSecondFieldValue ;
 
-    console.log(totalEllipseFieldValue);
 
-   
+function getAllData(name,total){
+    const container=document.getElementById('table-container');
+    const tr=document.createElement('tr');
+    tr.innerHTML=`
+    <td>${serial}.</td>
+    <td>${name}</td>
+    <td>${total} cm<sup>2</sup></td>
+    <td><button class="btn btn-primary bg-sky-600 px-4 py-2 rounded-lg text-white">Covert to m<sup>2</sup></button></td>
+    `;
+    container.appendChild(tr);
+}
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
 

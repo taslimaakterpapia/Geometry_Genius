@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <title>5th Assignment</title>
 </head>
 
@@ -21,12 +22,12 @@
                             class="text-lg font-medium text-zinc-600">Geometry Genius</span>
                     </h2>
                 </div>
-    
+
                 <div class=" py-8 mx-8 ">
                     <button class="text-white bg-sky-600 rounded-lg font-medium  px-8 py-2 hover:bg-sky-400">Blog
                     </button>
                 </div>
-    
+
             </div>
         </section>
 
@@ -39,14 +40,15 @@
             <div class="grid grid-cols-3 gap-4 w-3/4 mx-4 text-center">
                 <div class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-rose-400">
                     <img src="images/triangle.png" alt="">
-                    <h1 class="text-2xl font-bold text-zinc-700 mt-6">Triangle</h1>
+                    <h1 id="tri-name" class="text-2xl font-bold text-zinc-700 mt-6">Triangle</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) =0.5 x b x h</p>
-                    <input id="triangle-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="tri-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="triangle-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="tri-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="triangle-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="tri-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
@@ -55,80 +57,100 @@
                     <img class="mt-4" src="images/rectangle.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-8">Rectangle</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = w x l</p>
-                    <input id="rectangle-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="rect-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="rectangle-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="rect-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="rectangle-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="rect-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
 
-                <div
-                    class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-yellow-400">
+                <div class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-yellow-400">
                     <img class="mt-8" src="images/parallelogram.png" alt="">
-                    <h1 class="text-2xl font-bold text-zinc-700 mt-8">Parallelogram</h1>
+                    <h1 id="para-name" class="text-2xl font-bold text-zinc-700 mt-8">Parallelogram</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = b x h</p>
-                    <input id="parallelogram-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="para-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="parallelogram-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="para-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="parallelogram-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="para-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
                 <div class="bg-white mx-auto border border-zinc-50 rounded-lg p-8 hover:bg-violet-400">
                     <img class="mt-4" src="images/rhombus.png" alt="">
-                    <h1 class="text-2xl font-bold text-zinc-700 mt-6">Rhombus</h1>
+                    <h1 id="rhom-name" class="text-2xl font-bold text-zinc-700 mt-6">Rhombus</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
-                    <input id="rhombus-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="rhom-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="rhombus-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="rhom-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="rhombus-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="rhom-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
 
                 <div class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-lime-400">
                     <img class="mt-6 mx-8" class="mt-6" src="images/pentagon.png" alt="">
-                    <h1 class="text-2xl font-bold text-zinc-700 mt-6">Pentagon</h1>
+                    <h1 id="penta-name" class="text-2xl font-bold text-zinc-700 mt-6">Pentagon</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x p x b </p>
-                    <input id="pentagon-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="penta-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="pentagon-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="penta-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="pentagon-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="penta-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
 
-                <div
-                    class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-orange-400">
+                <div class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-orange-400">
                     <img class="mt-10 my-8" src="images/ellipse.png" alt="">
-                    <h1 class="text-2xl font-bold text-zinc-700 mt-6">Ellipse</h1>
-                    <p class="text-base font-normal text-zinc-700">Area (A) = </i>bh</p>
-                    <input id="ellipse-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <h1 id="elli-name" class="text-2xl font-bold text-zinc-700 mt-6">Ellipse</h1>
+                    <p class="text-base font-normal text-zinc-700">Area (A) = 3.1416bh</p>
+                    <input id="elli-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input id="ellipse-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="elli-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="ellipse-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="elli-btn"
+                        class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
+
+
+            </div>
+
+
+
+            <!-- ------------------------------------------area calculation--------------->
+
+            <div>
+                <div class="p-2 mt-12 mx-12">
+                    <h2 class="text-2xl font-medium text-center underline text-zinc-700">Area Calculation</h2>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                     
+                      <tbody id="table-container">
+                                               
+                      </tbody>
+                    </table>
+                  </div>
 
                 
             </div>
-
-            <div class="p-2 mt-12 mx-12">
-                <h2 class="text-2xl font-medium text-center underline text-zinc-700">Area Calculation</h2>
-             </div>
         </section>
-      
+
 
     </main>
 
