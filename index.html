@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <title>5th Assignment</title>
 </head>
 
@@ -44,7 +46,7 @@
                     <input id="triangle-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button id="calculate-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="triangle-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
@@ -53,12 +55,12 @@
                     <img class="mt-4" src="images/rectangle.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-8">Rectangle</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = w x l</p>
-                    <input class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="rectangle-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="rectangle-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="rectangle-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
@@ -68,25 +70,25 @@
                     <img class="mt-8" src="images/parallelogram.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-8">Parallelogram</h1>
                     <p class="text-base font-normal text-zinc-700">Area (A) = b x h</p>
-                    <input class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <input id="parallelogram-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="parallelogram-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="parallelogram-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
                 <div class="bg-white mx-auto border border-zinc-50 rounded-lg p-8 hover:bg-violet-400">
                     <img class="mt-4" src="images/rhombus.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-6">Rhombus</h1>
-                    <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x b x h</p>
-                    <input class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+                    <input id="rhombus-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="rhombus-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="rhombus-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
@@ -94,13 +96,13 @@
                 <div class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-lime-400">
                     <img class="mt-6 mx-8" class="mt-6" src="images/pentagon.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-6">Pentagon</h1>
-                    <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x b x h</p>
-                    <input class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x p x b </p>
+                    <input id="pentagon-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="pentagon-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="pentagon-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
@@ -109,13 +111,13 @@
                     class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-orange-400">
                     <img class="mt-10 my-8" src="images/ellipse.png" alt="">
                     <h1 class="text-2xl font-bold text-zinc-700 mt-6">Ellipse</h1>
-                    <p class="text-base font-normal text-zinc-700">Area (A) =3.1416bh</p>
-                    <input class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+                    <p class="text-base font-normal text-zinc-700">Area (A) = </i>bh</p>
+                    <input id="ellipse-first-field" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
                     <span>cm</span>
-                    <input class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+                    <input id="ellipse-second-field" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
                     <span>cm</span>
                     <br>
-                    <button class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+                    <button id="ellipse-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
 
                 </div>
 
